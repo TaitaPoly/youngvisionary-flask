@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero mb-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ url_for('static', filename='images/contact-hero.jpg') }}') center/cover no-repeat;">
+    <h1>Contact Us</h1>
+    <p class="lead">We are only a call away.</p>
+</div>
+
+<div class="container">
+    <div class="row mb-5">
+        <!-- Contact Information -->
+        <div class="col-md-12 text-center">
+            <h2>Our Contact Info</h2>
+            <p><strong>Address:</strong> P.O. Box 123, Voi, Kenya</p>
+
+            <!-- Phone Numbers with Call and WhatsApp -->
+            <p><strong>Phone Numbers:</strong></p>
+            <div class="d-flex flex-column align-items-center gap-3 mb-3">
+                <!-- Phone 1 -->
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+                    <a href="tel:+254700000000" class="btn btn-primary">Call +254 700 000 000</a>
+                    <a href="https://wa.me/254700000000" target="_blank" class="btn btn-success">WhatsApp</a>
+                </div>
+                <!-- Phone 2 -->
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+                    <a href="tel:+254701111111" class="btn btn-primary">Call +254 701 111 111</a>
+                    <a href="https://wa.me/254701111111" target="_blank" class="btn btn-success">WhatsApp</a>
+                </div>
+                <!-- Additional numbers can be added below in the same format -->
+            </div>
+
+            <!-- Email -->
+            <p><strong>Email:</strong></p>
+            <a href="mailto:info@youngvisionaryvoi.co.ke" class="btn btn-secondary mb-3">info@youngvisionaryvoi.co.ke</a>
+
+            <!-- Working Hours -->
+            <p><strong>Working Hours:</strong> Mon - Sat, 8:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,111 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("../images/carousel/slide1.jpg") center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero img {
+    max-height: 120px;
+}
+.hero h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.hero .btn {
+    margin-top: 20px;
+}
+
+/* Carousel */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Services */
+.card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.card-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Why Choose Us */
+.bg-light h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Partners / Testimonials */
+.bg-secondary {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Footer CTA */
+.bg-dark {
+    background-color: #222 !important;
+}
+.bg-dark h4 {
+    font-weight: bold;
+}
+.bg-dark a.btn {
+    font-weight: bold;
+}
+
+/* Contact & Call/WhatsApp Buttons */
+.btn-primary,
+.btn-success,
+.btn-secondary {
+    min-width: 180px; /* consistent width */
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* slightly darker blue */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-success:hover {
+    background-color: #28a745cc; /* slightly darker green */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-secondary:hover {
+    background-color: #5a5a5acc; /* slightly darker grey */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Flex spacing for buttons */
+.d-flex.flex-column.flex-sm-row > .btn {
+    margin: 5px;
+}
+

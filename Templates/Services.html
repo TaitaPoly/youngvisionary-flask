@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Banner -->
+<div class="hero mb-5">
+    <h1>Our Services</h1>
+    <p class="lead">Comprehensive solutions tailored to your needs</p>
+</div>
+
+<div class="container">
+    <!-- Breakdown & Recovery -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/breakdown-recovery-service.jpg') }}" 
+                 alt="Breakdown & Recovery" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Breakdown & Recovery Services</h2>
+            <p>
+                Are you looking for a reliable and experienced vehicle breakdown and recovery service? 
+                At Young & Visionary Voi Ltd, we provide 24/7 full professional and roadside assistance 
+                and vehicle recovery services.
+            </p>
+            <p>
+                Young & Visionary Voi Ltd provides affordable breakdown recovery services with a team of skilled 
+                and knowledgeable staff and can assist you with any vehicle transport and breakdown recovery service 
+                within Voi and its environs. From saloon cars to heavy machinery, we are only a call away!
+            </p>
+            <p>
+                Our towing trucks have certified and experienced technicians who are devoted and strategically allocated 
+                to ensure instant roadside assistance in case of any emergencies.
+            </p>
+        </div>
+    </div>
+
+    <!-- Construction Materials -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/Building Materials.jpg') }}" 
+                 alt="Construction Materials" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Construction Material Supply</h2>
+            <p>
+                We provide high-quality construction materials such as Sand, Gravel, and Cement with flexible delivery options.
+            </p>
+
+            <!-- Bulk Orders & Pricing -->
+            <h5>Bulk Orders & Pricing</h5>
+            <ul>
+                <li>Small orders (up to 5 tons): Competitive retail pricing</li>
+                <li>Medium orders (5–20 tons): Discounted rates</li>
+                <li>Large orders (20+ tons): Custom pricing and delivery plans</li>
+            </ul>
+
+            <!-- Quality Assurance Policies -->
+            <h5>Quality Assurance</h5>
+            <p>
+                We maintain strict quality assurance policies to ensure all materials meet industry standards. 
+                Below are some of our QA certificates:
+            </p>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <img src="{{ url_for('static', filename='images/qa_certificate1.jpg') }}" 
+                         alt="QA Certificate 1" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="{{ url_for('static', filename='images/qa_certificate2.jpg') }}" 
+                         alt="QA Certificate 2" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Road Works & Construction -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/Road-Construction.jpg') }}" 
+                 alt="Road Works & Construction" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Road Works & Construction</h2>
+            <p>
+                At Young & Visionary Voi Ltd, we specialize in comprehensive road construction and maintenance services. 
+                Our team handles road grading, paving, and repairs to ensure safety and efficiency for drivers. 
+                Key activities include paving, grading, widening, resurfacing, and repairing potholes, with phases typically involving 
+                clearing, subgrade preparation, base layer installation, drainage and curb work, and the final application of paving, markings, and signs.
+            </p>
+            <p>
+                When it comes to drainage and sewage installation, we have plenty of experience working on both public and private projects. 
+                We undertake both <strong>completed and ongoing projects</strong>, ensuring high standards and timely delivery. 
+                Our experienced engineers and construction staff are strategically allocated to manage multiple projects efficiently.
+            </p>
+            <p>
+                From urban streets of towns and cities to rural highways, we are committed to quality, durability, and safety in every project. 
+                Whether it’s new construction, repairs, expansions, or drainage systems, our goal is to provide infrastructure that serves communities reliably for years.
+            </p>
+        </div>
+    </div>
+
+    <!-- Completed Projects Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Completed Projects</h2>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name 1</h5>
+                    <p class="card-text">Brief description of the project and what was achieved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{{ url_for('static', filename='images/project2.jpg') }}" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name 2</h5>
+                    <p class="card-text">Brief description of the project and what was achieved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{{ url_for('static', filename='images/project3.jpg') }}" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name 3</h5>
+                    <p class="card-text">Brief description of the project and what was achieved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more projects similarly -->
+
+    </div>
+</div>
+{% endblock %}

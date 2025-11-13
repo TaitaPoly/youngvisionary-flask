@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero shadow rounded">
+    <div class="container py-5 text-center">
+        <!-- Company Logo -->
+        <img src="{{ url_for('static', filename='images/logo.png') }}" 
+             alt="Young & Visionary Voi Ltd Logo" 
+             class="mb-3 bg-white p-2 rounded shadow">
+
+        <h1>Young & Visionary Voi Ltd</h1>
+        <p class="lead">Always on your side on the road.</p>
+
+        <!-- Auto-sliding Carousel -->
+        <div id="heroCarousel" class="carousel slide my-4" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner rounded shadow">
+                {% for image in carousel_images %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                    <img src="{{ url_for('static', filename=image) }}" class="d-block w-100" alt="Carousel Image">
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <a href="{{ url_for('services') }}" class="btn btn-warning btn-lg mt-3 shadow">
+            Explore Our Services
+        </a>
+    </div>
+</div>
+
+<!-- Services Overview -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Key Services</h2>
+    <div class="row text-center">
+        <!-- Breakdown -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="{{ url_for('static', filename='images/breakdown-recovery-service.jpg') }}" 
+                     class="card-img-top" alt="Breakdown & Recovery">
+                <div class="card-body">
+                    <h5 class="card-title">Breakdown & Recovery</h5>
+                    <a href="{{ url_for('services') }}" class="btn btn-outline-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Construction Materials -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="{{ url_for('static', filename='images/Building Materials.jpg') }}" 
+                     class="card-img-top" alt="Construction Materials">
+                <div class="card-body">
+                    <h5 class="card-title">Construction Materials</h5>
+                    <a href="{{ url_for('services') }}" class="btn btn-outline-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Road Works -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="{{ url_for('static', filename='images/Road-Construction.jpg') }}" 
+                     class="card-img-top" alt="Road Works & Construction">
+                <div class="card-body">
+                    <h5 class="card-title">Road Works & Construction</h5>
+                    <a href="{{ url_for('services') }}" class="btn btn-outline-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h5>⏱ 24/7 Service</h5>
+                <p>Always ready to respond to your needs, day or night.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>👷 Experienced Team</h5>
+                <p>Our skilled professionals ensure high-quality work every time.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>🚚 Timely Delivery</h5>
+                <p>We value your time with prompt and reliable service.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>🛡 Safety Compliance</h5>
+                <p>We adhere to strict safety standards on all projects.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials / Partners -->
+        <div class="text-center mt-5">
+            <h3>Trusted by Leading Companies</h3>
+            <div class="row justify-content-center mt-3">
+                <div class="col-4 col-md-2"><div class="bg-secondary rounded p-3 text-white">Logo 1</div></div>
+                <div class="col-4 col-md-2"><div class="bg-secondary rounded p-3 text-white">Logo 2</div></div>
+                <div class="col-4 col-md-2"><div class="bg-secondary rounded p-3 text-white">Logo 3</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call-to-Action Footer -->
+<div class="bg-dark text-white text-center py-4">
+    <h4>Need Help Now?</h4>
+    <p class="mb-1">Call us anytime — we’re available 24/7</p>
+    <a href="{{ url_for('contact') }}" class="btn btn-warning mt-2">Contact Us</a>
+</div>
+
+{% endblock %}
